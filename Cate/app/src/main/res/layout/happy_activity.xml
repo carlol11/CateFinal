@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:keepScreenOn="true"
+    style="@style/DefaultBackground"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/placeholderECA"
+        android:layout_width="220dp"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@+id/placeholderECA"
+        android:padding="30dp">
+
+
+        <TextView
+            android:id="@+id/messageCate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:fontFamily="sans-serif"
+            android:text="What Made You Happy?"
+            android:textSize="19dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/messageCate"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/idk"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/button1"
+            android:layout_alignRight="@id/button1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/family"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/button2"
+            android:layout_alignRight="@id/button1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/outside"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText"
+            android:visibility="invisible"
+            android:layout_below="@id/messageCate"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:hint="Enter Here" />
+        <ListView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/messageCate"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/listview">
+
+        </ListView>
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="330dp"
+            android:id="@+id/imageView"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="250dp"
+            android:id="@+id/exitButton"/>
+
+        <TextView
+            android:id="@+id/quitCate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:fontFamily="sans-serif"
+            android:text="Are you sure you want to stop our conversation?"
+            android:textSize="19dp" />
+
+        <Button
+            android:id="@+id/yesQuit"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/quitCate"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="Sorry, but I think we have to stop"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/yesQuit"
+            android:layout_alignRight="@id/button1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="No, Sorry let's continue"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/notUser"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/goBack"
+            android:layout_alignRight="@id/button1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

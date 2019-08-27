@@ -1,0 +1,29 @@
+1,Did you like school? ,0,0
+2,Did you get good grades?,0,0
+3,Did you enjoy playing outside when you were younger?,0,0
+4,Do you like dancing?,0,0
+5,Were you a good dancer?,0,0
+6,Were you able to dance recently?,0,0
+7,Do you attend church?,0,0
+8,Did you serve the military?,0,0
+9,Do you like music?,0,0
+10,Do you lke art?,0,0
+11,Do you like watching movies?,0,0
+12,Do you remember your first crush?,0,0
+13,Do you remember your first date?,0,0
+14,Do you remember your first kiss?,0,0
+15,Do you remember having your first phone?,0,0
+16,Do you remember your first car?,0,0
+17,Do you have any Siblings?,0,0
+18,Are you sleeping more or less than you normally do?,1,-1
+19,Are you eating more or less than you normally do?,1,-1
+20,Are you tasting your food when you eat?,0.5,-0.5
+21,Do you feel tired no matter how much you sleep?,1,-1
+22,Are you capable of enjoying things right now?,-1,1
+23,Is it hard for you to do personal grooming?,1,-1
+24,Are you getting between 7 and 9 hours of sleep each night?,-0.5,0.5
+25,Are you drinking or using drugs to cope with the stress?,1,-1
+26,Are you exercising daily?,1,-1
+27,Are you eating well?,-1,1
+28,"Are you experiencing physical symptoms like headaches, insomnia, or digestive issues?",1,-1
+29,Do you have people you can talk to who understand what you’re going through?,-1,1

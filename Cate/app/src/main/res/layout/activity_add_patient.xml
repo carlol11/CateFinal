@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:keepScreenOn="true"
+    style="@style/DefaultBackground"
+    tools:context=".activities.AddPatientActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/activity_eca_small"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayoutECA"
+        style="@style/DefaultBackground">
+
+        <FrameLayout
+            android:id="@+id/placeholderECA"
+            style="@style/ECAPlaceholder"
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:longClickable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/placeholderECAText"
+            android:paddingTop="10dp"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/placeholderECA" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/saveCancelLayout"
+            android:layout_below="@+id/placeholderECAText">
+
+            <Button
+                android:id="@+id/saveNewPatientButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/cancelNewPatientButton"
+                android:layout_alignEnd="@+id/cancelNewPatientButton"
+                android:background="@drawable/buttonshape"
+                android:text="@string/save"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/cancelNewPatientButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/saveNewPatientButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/buttonshape"
+                android:text="@string/cancel"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/linearLayoutECA">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/newPatientQuestionView"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/questionView"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:inputType="textCapWords"
+                android:id="@+id/newPatientStringInput"
+                android:layout_below="@+id/questionView"
+                android:visibility="gone"/>
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newPatientDatePicker"
+                android:layout_below="@+id/questionView"
+                android:visibility="gone"
+                android:startYear="1910"
+                android:calendarViewShown="false"
+                android:descendantFocusability="blocksDescendants">
+            </DatePicker>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newPatientRadioChoice"
+                android:layout_below="@+id/questionView"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:checkedButton="@+id/radioButton1"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton1"
+                    android:textSize="20sp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#FFFFFF"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:textSize="20sp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </RadioGroup>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/remarksFragmentContainer"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
